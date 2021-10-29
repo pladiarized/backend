@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "editorials",
+  "info": {
+    "name": "editorial",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "cta_title": {
+      "type": "string"
+    },
+    "cover_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "keywords": {
+      "type": "dynamiczone",
+      "components": [
+        "misc-modules.keywords"
+      ]
+    },
+    "toc": {
+      "type": "dynamiczone",
+      "components": [
+        "misc-modules.toc"
+      ]
+    },
+    "contents": {
+      "type": "richtext"
+    },
+    "references": {
+      "type": "dynamiczone",
+      "components": [
+        "misc-modules.references"
+      ]
+    },
+    "public_id": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "author": {
+      "via": "editorials",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

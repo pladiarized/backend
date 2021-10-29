@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_misc_modules_tocs",
+  "info": {
+    "name": "toc",
+    "icon": "clipboard-list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "toc": {
+      "type": "string"
+    }
+  }
+}

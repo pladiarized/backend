@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_misc_modules_references",
+  "info": {
+    "name": "references",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

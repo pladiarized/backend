@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/editorials",
+      "handler": "editorial.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/editorials/count",
+      "handler": "editorial.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/editorials/:id",
+      "handler": "editorial.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/editorials",
+      "handler": "editorial.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/editorials/:id",
+      "handler": "editorial.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/editorials/:id",
+      "handler": "editorial.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

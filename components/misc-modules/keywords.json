@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_misc_modules_keywords",
+  "info": {
+    "name": "keywords",
+    "icon": "tasks",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "keyword": {
+      "type": "string"
+    }
+  }
+}
