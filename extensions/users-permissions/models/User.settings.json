@@ -110,6 +110,10 @@
     "admin_user": {
       "plugin": "admin",
       "model": "user"
+    },
+    "public_id": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
