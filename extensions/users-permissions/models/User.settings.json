@@ -106,6 +106,10 @@
     },
     "socials_twitter": {
       "type": "string"
+    },
+    "admin_user": {
+      "plugin": "admin",
+      "model": "user"
     }
   }
 }
