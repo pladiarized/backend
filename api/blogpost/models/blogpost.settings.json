@@ -55,6 +55,20 @@
       "via": "blogposts",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "likes": {
+      "type": "integer",
+      "default": 0
+    },
+    "comments": {
+      "type": "dynamiczone",
+      "components": [
+        "misc-modules.comments"
+      ]
+    },
+    "views": {
+      "type": "integer",
+      "default": 0
     }
   }
 }

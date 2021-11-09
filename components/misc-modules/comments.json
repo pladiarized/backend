@@ -1,0 +1,19 @@
+{
+    "collectionName": "components_misc_modules_comments",
+    "info": {
+        "name": "comments",
+        "icon": "heart",
+        "description": ""
+      },
+    "options": {},
+    "attributes": {
+        "comment": {
+            "type": "string"
+        },
+        "author": {
+            "via": "blogposts",
+            "plugin": "users-permissions",
+            "model": "user"
+        }
+    }
+}

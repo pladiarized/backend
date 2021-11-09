@@ -18,12 +18,37 @@
     },
     {
       "method": "GET",
-      "path": "/editorials/:id",
+      "path": "/editorials/:public_id",
       "handler": "editorial.findOne",
       "config": {
         "policies": []
       }
     },
+    {
+      "method": "GET",
+      "path": "/editorials/:public_id/next",
+      "handler": "editorial.getNext",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/editorials/:public_id/like",
+      "handler": "editorial.like",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/editorials/:public_id/unlike",
+      "handler": "editorial.like",
+      "config": {
+        "policies": []
+      }
+    },
+
     {
       "method": "POST",
       "path": "/editorials",
@@ -33,8 +58,33 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/editorials/:public_id/comments",
+      "handler": "editorial.createComment",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/editorials/:public_id/comments/:comment_id",
+      "handler": "editorial.deleteComment",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
-      "path": "/editorials/:id",
+      "path": "/editorials/:public_id/comments/:comment_id",
+      "handler": "editorial.updateComment",
+      "config": {
+        "policies": []
+      }
+    },
+
+    {
+      "method": "PUT",
+      "path": "/editorials/:public_id",
       "handler": "editorial.update",
       "config": {
         "policies": []
@@ -42,11 +92,19 @@
     },
     {
       "method": "DELETE",
-      "path": "/editorials/:id",
+      "path": "/editorials/:public_id",
       "handler": "editorial.delete",
       "config": {
         "policies": []
+        }
+      },
+      {
+        "method": "GET",
+        "path": "/editorials/:public_id/comments",
+        "handler": "editorial.findComments",
+        "config": {
+          "policies": []
+        }
       }
-    }
   ]
 }

@@ -18,8 +18,32 @@
     },
     {
       "method": "GET",
-      "path": "/blogposts/:id",
+      "path": "/blogposts/:public_id",
       "handler": "blogpost.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blogposts/:public_id/next",
+      "handler": "blogpost.getNext",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blogposts/:public_id/like",
+      "handler": "blogpost.like",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blogposts/:public_id/like",
+      "handler": "blogpost.like",
       "config": {
         "policies": []
       }
@@ -33,8 +57,32 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/blogposts/:public_id/comments",
+      "handler": "blogpost.createComment",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blogposts/:public_id/comments/:comment_id",
+      "handler": "blogpost.deleteComment",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
-      "path": "/blogposts/:id",
+      "path": "/blogposts/:public_id/comments/:comment_id",
+      "handler": "blogpost.updateComment",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blogposts/:public_id",
       "handler": "blogpost.update",
       "config": {
         "policies": []
@@ -42,8 +90,16 @@
     },
     {
       "method": "DELETE",
-      "path": "/blogposts/:id",
+      "path": "/blogposts/:public_id",
       "handler": "blogpost.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blogposts/:public_id/comments",
+      "handler": "blogpost.findComments",
       "config": {
         "policies": []
       }
