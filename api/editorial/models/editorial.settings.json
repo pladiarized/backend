@@ -33,6 +33,9 @@
       "required": false,
       "pluginOptions": {}
     },
+    "cover_image_caption": {
+      "type": "string"
+    },
     "keywords": {
       "type": "dynamiczone",
       "components": [
@@ -44,6 +47,9 @@
       "components": [
         "misc-modules.toc"
       ]
+    },
+    "abstract": {
+      "type": "string"
     },
     "contents": {
       "type": "richtext"
