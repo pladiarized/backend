@@ -114,6 +114,12 @@
     "public_id": {
       "type": "uid",
       "targetField": "name"
+    },
+    "education": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
     }
   }
 }
