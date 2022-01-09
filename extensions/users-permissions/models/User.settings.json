@@ -115,10 +115,16 @@
       "type": "uid",
       "targetField": "name"
     },
-    "education": {
+    "education_course": {
       "type": "string"
     },
-    "position": {
+    "position_title": {
+      "type": "string"
+    },
+    "education_university": {
+      "type": "string"
+    },
+    "position_subtitle": {
       "type": "string"
     }
   }
